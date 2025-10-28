@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Library Management System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📚 Library Management System</h1>
+  </header>
+
+  <section class="issue-form">
+    <h2>Issue a Book</h2>
+    <form id="issueForm">
+      <input type="text" id="studentName" placeholder="Student Name" required />
+      <input type="text" id="bookTitle" placeholder="Book Title" required />
+      <input type="date" id="issueDate" required />
+      <input type="date" id="returnDate" required />
+      <button type="submit">Issue Book</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Issued Books</h2>
+    <table id="issuedTable">
+      <thead>
+        <tr>
+          <th>Student Name</th>
+          <th>Book Title</th>
+          <th>Issue Date</th>
+          <th>Return Date</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Returned Books</h2>
+    <table id="returnedTable">
+      <thead>
+        <tr>
+          <th>Student Name</th>
+          <th>Book Title</th>
+          <th>Returned On</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Late + Fine Books</h2>
+    <table id="lateTable">
+      <thead>
+        <tr>
+          <th>Student Name</th>
+          <th>Book Title</th>
+          <th>Days Late</th>
+          <th>Fine (rupee)</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
